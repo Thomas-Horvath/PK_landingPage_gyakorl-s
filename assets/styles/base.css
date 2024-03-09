@@ -27,6 +27,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  color: var(--gray);
 }
 
 ul,
@@ -41,5 +42,36 @@ a {
 
 img {
   /* ezzel a beláítással mindig max olyan széles lehet a kép mint az őt tartalmazó konténer  */
-  width: 100%; 
+  width: 100%;
+}
+
+body {
+  background: var(--dark-blue-content);
+  min-width: 380px;
+}
+
+h1{
+  font-size: 1.6rem;
+  line-height: 2.2rem ;
+}
+
+.button {
+  background-color: var(--blue);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.4rem 6rem;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background:  var(--cyan);
+  color: var(--white);
+  box-shadow: 1px 1px 5px var(--cyan);
+}
+.button:active {
+  transform: scale(.95);
 }
